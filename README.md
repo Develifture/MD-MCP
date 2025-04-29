@@ -42,4 +42,4 @@ This project is an MCP (Model Control Point) server for interacting with Google'
 - The API key is now loaded from the `GEMINI_API_KEY` environment variable for safety.
 
 ## License
-ISC
+Apache 2.0
