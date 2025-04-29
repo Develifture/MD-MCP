@@ -1,0 +1,26 @@
+{
+  "name": "gemini-mcp",
+  "description": "MCP server for Gemini Flash 2.0 model",
+  "tools": [
+    {
+      "name": "generate_instructions",
+      "description": "Generates step-by-step instructions for a given task",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": "string",
+            "description": "The task to generate instructions for"
+          }
+        },
+        "required": ["task"]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "instructions://generated",
+      "description": "Generated instructions in Markdown format"
+    }
+  ]
+}
